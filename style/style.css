@@ -71,9 +71,9 @@ a {
   
 }
 
-@media screen and (min-width: 620px) and (max-width: 1079) {
+@media screen and (max-width: 850px) {
   .text {
-    display: inline-block;
+    display:none;
   }
   .dropdown {
       display: inline;
