@@ -1,13 +1,26 @@
+.container {
+  display: grid;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  background: white;
+}
+
+.logo img {
+  height: auto;
+  width: auto;
+  max-height: 72px;
+  max-width: 250px;
 }
 
 img {
   display: flex;
   justify-content: center;
   max-width: 90%;
+  margin: auto;
 }
 
 .text {
@@ -16,6 +29,19 @@ img {
   font-size: 0.9em;
   font-family: Kanit;
   font-weight: bold;
+}
+.text a:hover {
+  background-color: rgb(195, 0, 47);
+  color: rgb(255, 255, 255);
+}
+.text a {
+  margin: 0 5px;
+  color: black;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
 }
 
 a {
@@ -27,7 +53,7 @@ a {
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: none;
   margin: 20px;
 }
 
@@ -47,10 +73,12 @@ a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  font-size: 1rem;
+  font-family: Kanit;
 }
 
 .dropdown-content a:hover {
-  background-color: #bb0404;
+  background-color: #c00832;
   color: white;
 }
 
@@ -62,16 +90,17 @@ a {
   max-width: 150px; /* adjust as needed */
   margin-bottom: 10px; /* adjust as needed */
 }
-
-/* Responsive Navigation Bar */
-@media screen and (min-width: 1080px) {
-  .dropdown {
-      display: none;
-  }
-  
+.dropdown .navbar-toggle{
+  color:white;
+  background-color: #c00832;
+  border-radius: 5px;
+  padding: 8px 15px;
 }
 
-@media screen and (max-width: 850px) {
+/* Responsive Navigation Bar */
+
+
+@media screen and (max-width: 1200px) {
   .text {
     display:none;
   }
@@ -91,5 +120,6 @@ a {
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
   }
+
 
 }
