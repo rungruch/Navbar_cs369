@@ -30,8 +30,8 @@
       </div>
 
         <div class="dropdown">
-         <a class="navbar-toggle" uk-navbar-toggle-icon href="#"><i class='fa fa-bars'></i></a>
-          <div class="dropdown-content">
+          <a href="javascript:void(0);" class="navbar-toggle" onclick="myFunction()"><i class='fa fa-bars'></i></a>
+          <div class="dropdown-content" id="dropd">
             <a href="#">การรับสมัคร</a>
             <a href="#">แบบคำร้อง/เอกสารบัณฑิต</a>
             <a href="#">รายงานการประชุมกรรมการบัณฑิต</a>
@@ -40,6 +40,17 @@
           </div>
     </div>
   </div>
+
+  <script>
+function myFunction() {
+  var x = document.getElementById("dropd");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+  </script>
   </body>
     
 </html>
