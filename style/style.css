@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  background-color: rgb(241, 241, 241);
+}
 .navbar {
   margin: 0;
   justify-content: space-between;
@@ -74,6 +78,10 @@ a {
   padding: 8px 15px;
   transition: all 0.3s ease;
 }
+.dropdown .navbar-toggle:hover{
+  background-color: #980527;
+}
+
 
 /* Responsive Navigation Bar */
 @media screen and (max-width: 1200px) {
