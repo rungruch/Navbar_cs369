@@ -30,7 +30,7 @@
       </div>
 
         <div class="dropdown">
-          <a href="javascript:void(0);" class="navbar-toggle" onclick="myFunction()"><i class='fa fa-bars'></i></a>
+          <a href="javascript:void(0);" class="navbar-toggle" onclick="myFunction()" onmouseover="myFunction1()" onmouseout="myFunction2()"><i class='fa fa-bars'></i></a>
           <div class="dropdown-content" id="dropd">
             <a href="#">การรับสมัคร</a>
             <a href="#">แบบคำร้อง/เอกสารบัณฑิต</a>
@@ -50,6 +50,13 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+function myFunction1() {
+  var x = document.getElementsByClassName("dropdown");
+  x.style.display = "block";
+}
+
+
   </script>
   </body>
     
