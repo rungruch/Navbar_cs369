@@ -132,7 +132,7 @@ a {
   
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .logo img {
     height: auto;
     width: auto;
