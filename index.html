@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Navbar</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>    
+    <link href="style/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+  
+    <div class="navbar">
+      <div class="nav_main">
+        <div class="logo">
+          <img src="style/TULogo.png" alt="TULOGO" width="300" />
+        </div>
+  
+        <div class="text">
+          <a href="#">บัณฑิตศึกษา</a>
+          <a href="#">การรับสมัคร</a>
+          <a href="#">แบบคำร้อง/เอกสารบัณฑิต</a>
+          <a href="#">รายงานการประชุมกรรมการบัณฑิต</a>
+          <a href="#">ฐานข้อมูลวิทยานิพนธ์</a>
+        </div>
+  
+          <div class="dropdown">
+            <a href="javascript:void(0);" class="navbar-toggle" onclick="myFunction()"><i class='fa fa-bars' id="dropdown_ico"></i></a>
+          </div>
+      </div>
+        <div class="dropdown-content" id="dropd2">
+          <a href="#">การรับสมัคร</a>
+          <a href="#">แบบคำร้อง/เอกสารบัณฑิต</a>
+          <a href="#">รายงานการประชุมกรรมการบัณฑิต</a>
+          <a href="#">สำหรับนักศึกษา</a>
+          <a href="#">สำหรับเจ้าหน้าที่</a>
+        </div>
+  </div>
+
+
+  <script>
+function myFunction() {
+  var x = document.getElementById("dropd2");
+  var  y = document.getElementById("dropdown_ico");
+  if (x.className === "dropdown-content") {
+    x.className += " responsive";
+    y.className = " fa fa-times";
+  } else {
+    x.className = "dropdown-content";
+    y.className = " fa fa-bars";
+  }
+}
+  </script>
+  </body>
+    
+</html>
